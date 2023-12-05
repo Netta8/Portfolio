@@ -5,7 +5,7 @@ export const projects = [
     description:
       "In a collaborative effort with a skilled team, we developed a website for a local coffee shop using HTML, CSS, and Bootstrap. Our focus was on capturing the shop's ambiance and showcasing its products through a visually appealing and responsive design. The project highlighted our technical expertise and effective teamwork.",
     image: "./Bean-cafe.png",
-    link: "#",
+    link: "https://github.com/Netta8/BEAN.Cafe-group-project",
   },
   {
     title: "Special needs center app",
@@ -13,7 +13,7 @@ export const projects = [
     description:
       "I've created a responsive website using React JS to empower parents of children with disabilities. This platform allows parents to easily enroll their children in personalized classes at the center, ranging from swimming and karate to dance. The site aims to enhance accessibility and streamline the enrollment process for families.",
     image: "./NB-special-needs-center.png",
-    link: "#",
+    link: "https://github.com/Netta8/REACT-special.needs.Center-Project",
   },
   {
     title: "Beyond Work",
@@ -22,14 +22,6 @@ export const projects = [
       "BeyondWord is MERN stack group project, developed by four junior developers as a part of the Final Project of the DCI Further Training as a Web & Software Developer. Beyond Work is a platform for employees to connect on a personal level.",
     image: "./Beyond-work.png",
     link: "https://beyondworkclient.onrender.com/",
-  },
-  {
-    title: "Epic Todo App",
-    subtitle: "React Hooks",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
-    link: "#",
   },
 ];
 

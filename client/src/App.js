@@ -1,32 +1,56 @@
-import "./App.css";
 import React from "react";
+import Layout from "./components/Layout";
+import { Routes, Route } from "react-router-dom";
+import LandingPage from "./components/LandingPage";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
   return (
-    <main className="area">
-      <ul className="circles">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <Navbar />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </ul>
-    </main>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Layout>
+            <LandingPage />
+          </Layout>
+        }
+      />
+      <Route
+        path="/about"
+        element={
+          <Layout>
+            <About />
+          </Layout>
+        }
+      />
+      <Route
+        path="/projects"
+        element={
+          <Layout>
+            <Projects />
+          </Layout>
+        }
+      />
+      <Route
+        path="/skills"
+        element={
+          <Layout>
+            <Skills />
+          </Layout>
+        }
+      />
+      <Route
+        path="/contact"
+        element={
+          <Layout>
+            <Contact />
+          </Layout>
+        }
+      />
+    </Routes>
   );
 }
 
