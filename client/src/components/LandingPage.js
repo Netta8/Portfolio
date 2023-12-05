@@ -6,7 +6,7 @@ export default function LandingPage() {
     <div>
       <main>
         <div className="flex flex-col">
-          <h5 className="title-font sm:text-sm text-3xl mb-4 font-medium">
+          <h5 className="title-font text-green-400 sm:text-sm text-3xl mb-4 font-medium  typewriter">
             Hi, my name is
             <br className="hidden lg:inline-block" />
           </h5>
