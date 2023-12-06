@@ -1,4 +1,7 @@
 import { useState } from "react";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import EmailIcon from "@mui/icons-material/Email";
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -47,7 +50,7 @@ export default function Contact() {
                 ADDRESS
               </h2>
               <p className="mt-1">
-                <a className="text-indigo-400 leading-relaxed">
+                <a className="text-green-400 leading-relaxed">
                   13587, Berlin Germany
                 </a>
               </p>
@@ -56,7 +59,7 @@ export default function Contact() {
               <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-400 leading-relaxed">
+              <a className="text-green-400 leading-relaxed">
                 netta7398@gmail.com
               </a>
             </div>
@@ -68,13 +71,12 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font typewriter">
+          <h2 className=" sm:text-4xl text-3xl mb-1 font-medium title-font typewriter">
             Contact Me
           </h2>
           <p className="leading-relaxed mb-5">
-            Have a question or want to work together?
-            <br />
-            <p> Send me an a Message through this form</p>
+            Have a question or want to work together?Send me an a Message
+            through this form
           </p>
           <div className="relative mb-4">
             <label htmlFor="name" className="leading-7 text-sm text-gray-400">
@@ -84,7 +86,7 @@ export default function Contact() {
               type="text"
               id="name"
               name="name"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-green-400 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setName(e.target.value)}
             />
           </div>
@@ -96,7 +98,7 @@ export default function Contact() {
               type="email"
               id="email"
               name="email"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-green-400 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -110,16 +112,43 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
-              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              className="w-full bg-gray-800 rounded border border-gray-700 focus:border-green-400 focus:ring-2 focus:ring-indigo-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
           <button
             type="submit"
-            className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            className=" text-white bg-blue-500 border-0 py-2 px-6 text-center focus:outline-none hover:bg-green-400 hover:text-black rounded text-lg"
           >
             Submit
           </button>
+          <p className="leading-relaxed mt-5 ">You can also find me here:</p>
+          <p className="leading-relaxed mb-5">netta7398@gmail.com</p>
+          <div className="flex justify-center space-x-4 mb-4">
+            <div className="hover:text-green-400 transition duration-300 ease-in-out">
+              <a
+                href="https://www.linkedin.com/in/netta-barel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <LinkedInIcon />
+              </a>
+            </div>
+            <div className="hover:text-green-400 transition duration-300 ease-in-out">
+              <a
+                href="https://github.com/Netta8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </a>
+            </div>
+            <div className="hover:text-green-400 transition duration-300 ease-in-out">
+              <a href="mailto:netta7398@gmail.com" rel="noopener noreferrer">
+                <EmailIcon />
+              </a>
+            </div>
+          </div>
         </form>
       </div>
     </section>

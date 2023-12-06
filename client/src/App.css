@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
-
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&family=Architects+Daughter&family=Bad+Script&family=Dancing+Script:wght@600&family=Gloria+Hallelujah&family=IBM+Plex+Serif:wght@700&family=Josefin+Sans:wght@300;400;700&family=Jura:wght@500;700&family=Meow+Script&family=Open+Sans:wght@300&family=Pacifico&family=Permanent+Marker&family=Pixelify+Sans&family=Poppins:wght@900&family=Quicksand&family=Rajdhani:wght@500&family=Rubik+Mono+One&family=Space+Mono:wght@700&family=Work+Sans&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -29,12 +28,11 @@ body {
 }
 
 .typewriter {
-  color: #fff;
+  color: rgb(74 222 128);
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid rgb(74 222 128); /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
-
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 4.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
@@ -58,4 +56,21 @@ body {
   50% {
     border-color: rgb(74 222 128);
   }
+}
+
+p,
+a,
+button {
+  font-family: "Jura", sans-serif;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+}
+
+h3 {
+  font-family: "Pixelify Sans", sans-serif;
+}
+h5 {
+  font-family: "Pixelify Sans", sans-serif;
 }

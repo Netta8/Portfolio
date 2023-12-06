@@ -4,19 +4,15 @@ import "../App.css";
 export default function LandingPage() {
   return (
     <div>
+      <div className="flex flex-wrap ">
+        <h5 className="title-font text-green-400 text-xl mb-4 font-medium typewriter ">
+          Hi, my name is
+        </h5>
+      </div>
       <main>
-        <div className="flex flex-col">
-          <h5 className="title-font text-green-400 sm:text-sm text-3xl mb-4 font-medium  typewriter">
-            Hi, my name is
-            <br className="hidden lg:inline-block" />
-          </h5>
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-            Netta Barel
-            <br className="hidden lg:inline-block" />
-          </h1>
-          <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium">
-            A Full-Stack Web Developer
-          </h1>
+        <div className="flex flex-col ">
+          <h1 className="title-font text-9xl mb-4 font-medium">Netta Barel</h1>
+          <h3 className=" text-4xl mb-4 ">A Full-Stack Web Developer</h3>
         </div>
       </main>
     </div>
