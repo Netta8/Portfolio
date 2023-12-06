@@ -8,23 +8,24 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  function encode(data) {
-    return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-  }
-
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/", {
+    fetch("http://localhost:5000/contact/create", {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", name, email, message }),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
     })
-      .then(() => alert("Message sent!"))
-      .catch((error) => alert(error));
+      .then((response) => response.json())
+      .then((data) => {
+        console.log("Message sent successfully:", data);
+        alert("Message sent!");
+      })
+      .catch((error) => {
+        console.error("Error sending message:", error);
+        alert("Error sending message.");
+      });
   }
   return (
     <section
@@ -66,8 +67,8 @@ export default function Contact() {
           </div>
         </div>
         <form
-          netlify
-          name="contact"
+          action="http://localhost:5000/contact/create"
+          method="POST"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
