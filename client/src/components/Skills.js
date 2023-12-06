@@ -8,7 +8,10 @@ export default function Skills() {
         <div className="container px-5 py-10 mx-auto">
           <div className="lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <div className=" flex flex-wrap  ">
-              <h1 className="text-lg typewriter"> Skills &amp; Technologies</h1>
+              <h1 className="text-lg mb-3 typewriter">
+                {" "}
+                Skills &amp; Technologies
+              </h1>
             </div>
             <p className="mb-8 tracking-wide leading-relaxed">
               Over the past year, I have diligently cultivated a diverse set of
