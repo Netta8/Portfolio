@@ -3,7 +3,7 @@ export const projects = [
     title: "Bean Cafe",
     subtitle: "HTML, CSS, Bootstrap",
     description:
-      "In a collaborative effort with a skilled team, we developed a website for a local coffee shop using HTML, CSS, and Bootstrap. Our focus was on capturing the shop's ambiance and showcasing its products through a visually appealing and responsive design. The project highlighted our technical expertise and effective teamwork.",
+      "Café website, built with HTML and CSS. Featuring Home, Menu, Contact and About pages. frontend group project",
     image: "./Bean-cafe.png",
     link: "https://github.com/Netta8/BEAN.Cafe-group-project",
   },
@@ -11,7 +11,7 @@ export const projects = [
     title: "Special needs center app",
     subtitle: "React",
     description:
-      "I've created a responsive website using React JS to empower parents of children with disabilities. This platform allows parents to easily enroll their children in personalized classes at the center, ranging from swimming and karate to dance. The site aims to enhance accessibility and streamline the enrollment process for families.",
+      "React-based frontend application enabling the registration of children for personalized classes at a special needs center.",
     image: "./NB-special-needs-center.png",
     link: "https://github.com/Netta8/REACT-special.needs.Center-Project",
   },
@@ -19,7 +19,7 @@ export const projects = [
     title: "Beyond Work",
     subtitle: "MERN APP",
     description:
-      "BeyondWord is MERN stack group project, developed by four junior developers as a part of the Final Project of the DCI Further Training as a Web & Software Developer. Beyond Work is a platform for employees to connect on a personal level.",
+      "BeyondWord is a Corporate social network meant for employees in a company to interact on a personal level. MERN stack group project",
     image: "./Beyond-work.png",
     link: "https://beyondworkclient.onrender.com/",
   },

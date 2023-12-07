@@ -13,7 +13,7 @@ export default function LandingPage() {
       <main>
         <div className="flex flex-col ">
           <h1 className="title-font text-7xl mb-4 font-medium">Netta Barel</h1>
-          <h3 className=" text-3xl mb-4 ">A Full-Stack Web Developer</h3>
+          <h3 className=" text-3xl mb-4 ">I'm a Full-Stack Web Developer</h3>
         </div>
       </main>
     </div>

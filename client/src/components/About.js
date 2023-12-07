@@ -1,30 +1,27 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import MyResumePDF from "../CV_Netta _Barel_English.pdf";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
 export default function About() {
   const downloadResumeEnglish = () => {
-    // Trigger the download when the link is clicked
     const link = document.createElement("a");
     link.href = MyResumePDF;
-    link.download = "CV_Netta _Barel_English.pdf"; // Specify the desired file name
+    link.download = "CV_Netta _Barel_English.pdf";
     link.click();
   };
 
   const downloadResumeGerman = () => {
-    // Trigger the download when the link is clicked
     const link = document.createElement("a");
     link.href = MyResumePDF;
-    link.download = "Resume_Netta_Barel_Deutsch.pdf"; // Specify the desired file name
+    link.download = "Resume_Netta_Barel_Deutsch.pdf";
     link.click();
   };
 
   return (
     <div className="component-wrapper">
       <section id="about">
-        <div className="container px-5 py-10 mx-auto">
-          <div className="lg:flex-grow md:w-full lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+        <div className="container px-5 py-10 mx-auto md:mx-auto md:w-full lg:w-full lg:mx-auto lg:max-w-screen-md lg:pl-8">
+          <div className="lg:flex-grow md:w-full lg:pr-24 md:pr-16 md:ml-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <div className=" flex flex-wrap  ">
               <h1 className="text-lg mb-3 typewriter">Some Info about me:</h1>
             </div>
@@ -52,19 +49,12 @@ export default function About() {
               in developing web-based software and possess a strong command of
               git-based versioning systems.
             </p>
-            <p className="mb-8 tracking-wide leading-relaxed">
-              Furthermore, my background in Kindergarten teaching has nurtured
-              my ability to work collaboratively, showcasing my adeptness at
-              multitasking, always maintaining a comprehensive perspective, and
-              embodying qualities such as patience and empathy – traits that
-              enable me to efficiently solve problems and contribute effectively
-              to a team.
-            </p>
+
             <div className="flex space-x-4">
               <div className="flex justify-center mt-8">
                 <button
                   onClick={downloadResumeEnglish}
-                  className="text-green-400 border-2 border-green-400 rounded-3xl py-2 px-6 hover:text-black rounded text-lg transition-all hover:duration-300 ease-in-out"
+                  className="text-green-400 border-2 border-green-400 rounded-3xl py-1 px-2 sm:px-3 md:px-4 lg:px-5 hover:text-black rounded text-xs sm:text-sm md:text-base lg:text-lg transition-all hover:duration-300 ease-in-out"
                 >
                   English Résumé <FileDownloadIcon />
                 </button>
@@ -72,7 +62,7 @@ export default function About() {
               <div className="flex justify-center mt-8">
                 <button
                   onClick={downloadResumeGerman}
-                  className="text-green-400 border-2 border-green-400 rounded-3xl py-2 px-6 hover:text-black rounded text-lg transition-all hover:duration-300 ease-in-out"
+                  className="text-green-400 border-2 border-green-400 rounded-3xl py-1 px-2 sm:px-3 md:px-4 lg:px-5 hover:text-black rounded text-xs sm:text-sm md:text-base lg:text-lg transition-all hover:duration-300 ease-in-out"
                 >
                   Deutsch Résumé <FileDownloadIcon />
                 </button>

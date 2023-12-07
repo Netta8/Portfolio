@@ -1,8 +1,10 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Navbar from "./Navbar";
+import BurgerMenu from "./BurgerMenu";
 
 const Layout = ({ children }) => {
   const heroRef = useRef(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const updateMousePosition = (ev) => {
     if (!heroRef.current) return;
@@ -11,11 +13,19 @@ const Layout = ({ children }) => {
     heroRef.current.style.setProperty("--y", `${clientY}px`);
   };
 
+  const handleResize = () => {
+    setIsSmallScreen(window.innerWidth <= 768); // Adjust the breakpoint as needed
+  };
+
   useEffect(() => {
     window.addEventListener("mousemove", updateMousePosition);
+    window.addEventListener("resize", handleResize);
+
+    handleResize(); // Check screen size on component mount
 
     return () => {
       window.removeEventListener("mousemove", updateMousePosition);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -25,7 +35,7 @@ const Layout = ({ children }) => {
       className="hero bg-gray-800 text-white p-4 z-50 h-screen "
     >
       <div className="flex flex-col">
-        <Navbar />
+        {isSmallScreen ? <BurgerMenu /> : <Navbar />}
         {children}
       </div>
     </main>
