@@ -26,7 +26,7 @@ const BurgerMenu = () => {
       </button>
       {isOpen && (
         <div className="bg-gray-800/50 fixed top-0 left-0 h-screen w-50 p-4 z-50">
-          <nav className="flex flex-col text-white">
+          <nav className="flex flex-col mt-10 text-white">
             <Link
               to="/"
               className="font-mono font-bold my-2 hover:text-green-400 transition duration-300 ease-in-out"
@@ -37,7 +37,8 @@ const BurgerMenu = () => {
             <Link
               to="/about"
               className={`my-2 hover:text-green-400 transition duration-300 ease-in-out ${
-                location.pathname === "/about" && "underline"
+                location.pathname === "/about" &&
+                "text-white underline decoration-wavy decoration-green-400"
               }`}
               onClick={closeMenu}
             >
@@ -46,7 +47,8 @@ const BurgerMenu = () => {
             <Link
               to="/projects"
               className={`my-2 hover:text-green-400 transition duration-300 ease-in-out ${
-                location.pathname === "/projects" && "underline"
+                location.pathname === "/projects" &&
+                "text-white underline decoration-wavy decoration-green-400"
               }`}
               onClick={closeMenu}
             >
@@ -55,7 +57,8 @@ const BurgerMenu = () => {
             <Link
               to="/skills"
               className={`my-2 hover:text-green-400 transition duration-300 ease-in-out ${
-                location.pathname === "/skills" && "underline"
+                location.pathname === "/skills" &&
+                "text-white underline decoration-wavy decoration-green-400"
               }`}
               onClick={closeMenu}
             >
@@ -64,7 +67,8 @@ const BurgerMenu = () => {
             <Link
               to="/contact"
               className={`my-2 hover:text-green-400 transition duration-300 ease-in-out ${
-                location.pathname === "/contact" && "underline"
+                location.pathname === "/contact" &&
+                "text-white underline decoration-wavy decoration-green-400"
               }`}
               onClick={closeMenu}
             >

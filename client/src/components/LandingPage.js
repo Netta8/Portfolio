@@ -3,7 +3,7 @@ import "../App.css";
 
 export default function LandingPage() {
   return (
-    <div>
+    <div className="landing-page-container">
       <div className=" w-56 ">
         <h5 className=" title-font text-green-400 text-xl mb-4 font-medium typewriter ">
           Hi, my name is

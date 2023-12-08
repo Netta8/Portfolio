@@ -12,7 +12,7 @@ export default function Skills() {
                 Skills &amp; Technologies
               </h1>
             </div>
-            <p className="mb-8 tracking-wide leading-relaxed">
+            <p className="mb-6 tracking-wide leading-relaxed">
               Over the past year, I have diligently cultivated a diverse set of
               skills that have not only expanded my professional capabilities
               but have also fueled my passion for continuous growth. allowing me
@@ -25,10 +25,10 @@ export default function Skills() {
               but also propels me forward in pursuit of further excellence.
             </p>
           </div>
-          <div className="flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 -mx-2">
+          <div className="skills-icons flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 -mx-2">
             {skills.map((skill) => (
               <div key={skill.title} className="p-2 sm:w-1/5 w-full">
-                <div className="bg-transparent rounded flex p-4 h-full items-center transform transition duration-300 ease-in-out hover:shadow-lg">
+                <div className=" bg-transparent rounded flex p-4 h-full items-center transform transition duration-300 ease-in-out hover:shadow-lg">
                   <img
                     src={skill.image}
                     alt={skill.title}
