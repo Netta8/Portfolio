@@ -1,0 +1,21 @@
+/* Layout.css */
+.transition-transform {
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+.transition-transform-exit {
+  transform: translateX(0);
+}
+
+.transition-transform-exit-active {
+  transform: translateX(-100%);
+}
+
+.transition-transform-enter {
+  transform: translateX(100%);
+}
+
+.transition-transform-enter-active {
+  transform: translateX(0);
+}

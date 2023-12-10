@@ -83,7 +83,7 @@ h5 {
   font-family: "Pixelify Sans", sans-serif;
 }
 
-@media screen and (min-width: 375px) and (max-width: 426px) {
+@media screen and (min-width: 250px) and (max-width: 426px) {
   .landing-page-container {
     margin-left: 50px;
   }
