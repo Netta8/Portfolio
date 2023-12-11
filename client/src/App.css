@@ -137,13 +137,12 @@ h5 {
 @media screen and (min-width: 300px) and (max-width: 374px) {
   #about {
     margin-top: 50px;
-    margin-right: 50px;
+
     width: 70%;
   }
 
   #skills {
     margin-top: 50px;
-    margin-right: 50px;
     width: 70%;
   }
   .skills-icons {
@@ -156,7 +155,6 @@ h5 {
 
   #contact {
     margin-top: 50px;
-    margin-right: 50px;
     width: 100%;
   }
   .map {

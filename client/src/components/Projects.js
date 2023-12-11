@@ -23,7 +23,7 @@ export default function Projects() {
                   <a
                     href={project.link}
                     key={project.image}
-                    className="project-header  sm:w-1/2 md:w-1/3 p-2 relative overflow-hidden"
+                    className="project-header sm:w-1/2 md:w-1/3 p-2 relative overflow-hidden"
                   >
                     <div className="relative flex flex-col items-center">
                       <img
