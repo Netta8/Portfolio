@@ -74,9 +74,12 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
-          <h2 className=" sm:text-4xl text-3xl mb-1 font-medium title-font typewriter">
-            Contact Me
-          </h2>
+          <div className="contact-title">
+            <h1 className=" sm:text-4xl text-lg mb-3 font-medium title-font  typewriter">
+              Contact Me
+            </h1>
+          </div>
+
           <p className="leading-relaxed mb-5">
             Have a question or want to work together? Send me an a Message
             through this form

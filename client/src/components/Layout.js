@@ -14,14 +14,14 @@ const Layout = ({ children }) => {
   };
 
   const handleResize = () => {
-    setIsSmallScreen(window.innerWidth <= 768); // Adjust the breakpoint as needed
+    setIsSmallScreen(window.innerWidth <= 768);
   };
 
   useEffect(() => {
     window.addEventListener("mousemove", updateMousePosition);
     window.addEventListener("resize", handleResize);
 
-    handleResize(); // Check screen size on component mount
+    handleResize();
 
     return () => {
       window.removeEventListener("mousemove", updateMousePosition);

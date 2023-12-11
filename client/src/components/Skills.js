@@ -9,7 +9,7 @@ export default function Skills() {
           <div className="lg:flex-grow md:w-full lg:pr-24 md:pr-16 md:ml-8 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
             <div className=" flex flex-wrap  ">
               <h1 className="text-lg mb-3 typewriter">
-                Skills &amp; Technologies
+                Skills &amp; Tech stack
               </h1>
             </div>
             <p className="mb-6 tracking-wide leading-relaxed">
