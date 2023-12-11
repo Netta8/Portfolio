@@ -54,6 +54,11 @@ To run this project locally, follow these steps:
 - **Explore projects:** Click on the "Projects" section to see details about the projects I've worked on.
 - **Contact me:** Use the "Contact" section to send me a message.
 
+## Screenshots
+
+![Screenshot 1](![portfolio-screenshot](https://github.com/Netta8/Portfolio/assets/118278167/521771a1-c5f3-4138-872d-8f33c6cea9d9)
+)
+
 ## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for improvement, feel free to open an issue or create a pull request.
