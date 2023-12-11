@@ -56,7 +56,8 @@ To run this project locally, follow these steps:
 
 ## Screenshots
 
-![Screenshot](portfolio-screenshot](https://github.com/Netta8/Portfolio/assets/118278167/521771a1-c5f3-4138-872d-8f33c6cea9d9)
+![portfolio-screenshot](https://github.com/Netta8/Portfolio/assets/118278167/ddca13dd-82c7-495b-8de0-beec9e08f57b)
+
 
 ## Contributing
 
