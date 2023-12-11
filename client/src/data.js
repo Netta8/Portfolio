@@ -19,7 +19,7 @@ export const projects = [
     title: "Beyond Work",
     subtitle: "MERN APP",
     description:
-      "BeyondWord is a Corporate social network meant for employees in a company to interact on a personal level. MERN stack group project",
+      "BeyondWork is a Corporate social network meant for employees in a company to interact on a personal level. MERN stack group project",
     image: "./Beyond-work.png",
     link: "https://beyondworkclient.onrender.com/",
   },
