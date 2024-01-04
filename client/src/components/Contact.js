@@ -23,11 +23,15 @@ export default function Contact() {
       .then((response) => response.json())
       .then((data) => {
         console.log("Message sent successfully:", data);
-        alert("Message sent!");
+        alert(
+          "the message was sent successfully! I will contact you back as soon as possible ✨"
+        );
       })
       .catch((error) => {
         console.error("Error sending message:", error);
-        alert("Error sending message.");
+        alert(
+          "Oh no! Something happened... The message cannot be sent due to an Error. 😞 Please try again later."
+        );
       });
   }
 
