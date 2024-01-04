@@ -8,9 +8,12 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const formAction = "https://formspree.io/f/xqkrkylr";
+
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("http://localhost:5000/contact/create", {
+
+    fetch(formAction, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,6 +30,7 @@ export default function Contact() {
         alert("Error sending message.");
       });
   }
+
   return (
     <section
       id="contact"
@@ -69,7 +73,7 @@ export default function Contact() {
           </div>
         </div>
         <form
-          action="http://localhost:5000/contact/create"
+          action={formAction}
           method="POST"
           onSubmit={handleSubmit}
           className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
