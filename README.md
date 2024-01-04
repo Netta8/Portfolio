@@ -58,10 +58,9 @@ To run this project locally, follow these steps:
 
 ![portfolio-screenshot](https://github.com/Netta8/Portfolio/assets/118278167/ddca13dd-82c7-495b-8de0-beec9e08f57b)
 
-
 ## Contributing
 
-Contributions are welcome! If you find any bugs or have suggestions for improvement, feel free to open an issue or create a pull request.
+Contributions are welcome! If you find any bugs or have suggestions for improvement, feel free to open an issue or create a pull request
 
 ## Contact
 
